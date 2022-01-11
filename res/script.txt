@@ -1,0 +1,17 @@
+load rainbow.ppm
+load rainbowBlur.jpg
+current 0
+blur
+sepia
+remove 1
+nameLayer 0 hello
+load rainbowSepia.png
+nameLayer 1 sepia
+current 1
+sharpen
+save rainbow.png
+invisible 0
+save rainbowsepia.ppm
+visible 0
+saveMultiple rainbows jpg
+quit

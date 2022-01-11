@@ -1,0 +1,33 @@
+How to use GUI:
+
+- To load an image, you can either press the load button or navigate to the save/load menu bar
+  at the top. Then you simply navigate to and select your image to load it in (must be type jpg,
+  png or ppm). The first image you load in will automatically be set as the current image.
+
+- To run filter or color operations on the current image, you can either use the combobox and
+  select an operation from blur, sharpen, sepia or greyscale and press the run button.
+  Or, you can navigate to the operation bar at the top, from there you can access all the
+  operations including downscale and mosaic, which are not available in the combobox.
+
+  FYI running mosaic will take a bit of time to load.
+
+- To run setting operations on the image, you can also use the setting menu bar, which is
+  reccomended and only layers that are able to be altered will only show up. For example, if there
+  are two layers named "one" and "two" and both layers are visible, they will both show up as
+  options on the popup for setting layers to invisible, and if you set "one" to invisible, only
+  "one" will show up as an option for setting a layer to visible and only "two" will show up for
+  setting a layer to invisible.
+  You can also use the buttons at the bottom named remove layer, set as current, set to invisible
+  or set to visible, but you must first select a layer from the combobox right next to it.
+
+  It is reccomended to use the menu bar at the top for setting operations so users are able
+  to see the state of the layers.
+
+- To save a single image (the topmost visible), you can either press the save single file button
+  or use the save/load menu bar, and simply navigate to the folder you would like to save to
+  and input the name of the file plus the file type (jpg, png, ppm)
+
+- To save a multi-layered image, you can either press the save multiple files button or use the
+  save/load menu bar and simple navigate to where you would like to create the folder to save all
+  the images to, then input then name of the "folder.fileType" which will create a folder and save
+  all the images as the given filetype.

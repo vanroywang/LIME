@@ -1,0 +1,54 @@
+Script commands supported by our application:
+
+Each time a command is run, there should be a string appended to the view as a response
+
+Load must be called before any other operation
+
+Current must be set before calling sepia, greyscale, sharpen, and blur
+
+- “load” + “ “ + filename (must be on same line)
+	Will create a new layer with the image and the layer name as the name of the file without the
+	.ppm or .jpg or .png
+	Example: “load rainbow.ppm”
+
+- “current” + “ “ + layerIndex (must be on same line)
+	Will set the layer at the given index to the current layer
+	Can only be called after load
+	Example: “current 0” 
+- “blur”
+	Blurs the current layer
+
+- “sharpen”
+	Sharpens the current layer
+
+- “sepia”
+	Turns the current layer image into a sepia version
+
+- "greyscale"
+	Turns the current layer image into a greyscale version
+
+- "invisible" + " " + layerIndex (must be on same line)
+	Will set the layer at the given index to invisible 
+	Example: "invisible 0"
+
+- "nameLayer" + " " + layerIndex + " " + newName (must be on same line)
+	Will set the name of the layer at the given index to the new name
+	Example: "nameLayer 0 hello"
+
+- "remove" + " " + layerIndex (must be on same line)
+	Will remove the layer at the given layer index
+	Example: "remove 0"
+
+- "save" + " " + fileName + type (must be on same line)
+	Will save the topmost visible layer
+	Example: "save hello.jpg"
+
+- "saveMultiple" + " " + fileName + " " + fileType (must be on same line)
+	Will save all the images in the multi-layer image into a folder with a txt file and with the given type
+	Example: "saveMultiple hello jpg"
+
+- "visible" + " " + layerIndex (must be on same line)
+	Will set the layer at the given index to visible
+
+- "quit" 
+	Quits the image processor 
